@@ -14,7 +14,7 @@ metadata:
     {{- end }}
 spec:
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.gitRepositoryStorage.size }}
@@ -37,7 +37,7 @@ metadata:
     {{- end }}
 spec:
   accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
   resources:
     requests:
       storage: {{ .Values.logStorage.size }}
